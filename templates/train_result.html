@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>train result</title>
+</head>
+<body>
+<p>Extracted features:</p>
+<br>
+    {% for table in tables %}
+
+            <p>{{titles[loop.index-1]}}</p>
+            {{ table|safe }}
+    {% endfor %}
+
+
+</body>
+</html>

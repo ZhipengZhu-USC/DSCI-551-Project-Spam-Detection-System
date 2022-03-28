@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>data</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/main.css')}}">
+</head>
+<body>
+    <p>files stored in Firebase Storage:</p>
+    <br>
+    {% for file in file_list %}
+             <p>{{ file }}</p>
+
+
+
+            <form action="viewFile" method="post">
+
+                <input type="submit" name="submit_button" value="{{"view " ~ file}}" />
+            </form>
+
+            <form action="train" method="post">
+                <input type="submit" name = "train_model" value="{{"Build machine learning model based on " ~ file}}" />
+            </form>
+        {% endfor %}
+    <br>
+    <!--form action = "test" method="post">
+                <input type = "text" name = "nm">
+                <input type="submit" value="post test" />
+            </form!-->
+</body>
+</html>

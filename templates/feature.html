@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>feature_words</title>
+</head>
+<body>
+<p>Most recent features stored in database:</p>
+<br>
+    {% for table in tables %}
+
+            <p>{{titles[loop.index-1]}}</p>
+            {{ table|safe }}
+    {% endfor %}
+</body>
+</html>

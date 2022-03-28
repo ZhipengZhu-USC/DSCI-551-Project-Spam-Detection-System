@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Say hello</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/main.css')}}">
+    <style>
+    body {
+         background-image: url("https://raw.githubusercontent.com/ZhipengZhu-USC/simpleFrontEnd/c66df5de1f21341494423ed5f850d804f160dfb1/2135-database_management_software.jpg");
+    }
+    </style>
+</head>
+
+<body>
+    <!--img src="https://raw.githubusercontent.com/ZhipengZhu-USC/simpleFrontEnd/c66df5de1f21341494423ed5f850d804f160dfb1/2135-database_management_software.jpg"!-->
+    <!--br!-->
+    <p>Welcome to Data and ML Model Management System for Spam Email Classification</p>
+    <form action="data">
+    <input type="submit" value="View Existing Data" />
+    </form>
+    <br>
+    <form action="upload">
+    <input type="submit" value="Data Upload" />
+    </form>
+    <br>
+    <form action="viewFeature">
+    <input type="submit" value="View Features" />
+    <br>
+    </form>
+    <form action="ML">
+    <input type="submit" value="Machine Learning Model" />
+    </form>
+    <br>
+    <form action="predict">
+    <input type="submit" value="Quick Predict" />
+    </form>
+    <br>
+    <form action="prediction_history">
+    <input type="submit" value="Prediction History" />
+    </form>
+
+
+
+</body>
+</html>
