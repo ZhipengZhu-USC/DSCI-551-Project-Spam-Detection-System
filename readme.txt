@@ -1,1 +1,0 @@
-To run the system, put everything in the same directory and use the 'flask run' command; Then you can copy the generated url and add '/hello' to the end, and then open the url in a browser to see the homepage. 
