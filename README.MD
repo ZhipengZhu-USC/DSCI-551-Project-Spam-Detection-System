@@ -3,6 +3,8 @@ This is a data and machine learning model management system for spam email detec
 
 Link to datasets: https://www.kaggle.com/venky73/spam-mails-dataset
 
+![GitHub Logo](/picture/index.png)
+
 Please see project report for details.
 
 To run the system, put everything in the same directory and use the 'flask run' command; Then you can copy the generated url and add '/hello' to the end, and then open the url in a browser to see the homepage. 
